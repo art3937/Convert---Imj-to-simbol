@@ -1,5 +1,7 @@
 package ru.netology.graphics.image;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
@@ -12,7 +14,6 @@ public interface TextGraphicsConverter {
      * @throws BadImageSizeException Если соотношение сторон изображения слишком большое
      */
     String convert(String url) throws IOException, BadImageSizeException;
-
     /**
      * Устанавливает максимальную ширину результирующего изображения в "текстовых пикселях".
      * Если исходное изображение имеет характеристики, превышающие максимальные, оно сжимается
