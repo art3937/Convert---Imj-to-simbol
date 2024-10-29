@@ -17,5 +17,6 @@ public class Main {
         String url = "https://i.ibb.co/6DYM05G/edu0.jpg";
         String imgTxt = converter.convert(url);
         System.out.println(imgTxt);
+        System.out.println("kgkk")
     }
 }
